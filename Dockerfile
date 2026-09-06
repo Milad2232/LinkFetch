@@ -23,7 +23,7 @@ RUN git clone --depth 1 \
 WORKDIR /opt/bgutil-ytdlp-pot-provider/server
 
 RUN npm ci
-RUN npx tsc
+RUN npm run build
 
 WORKDIR /app
 
